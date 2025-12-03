@@ -1,0 +1,71 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints
+
+# Wrażliwe dane - obrazy i dokumenty
+data/raw/*.jpg
+data/raw/*.jpeg
+data/raw/*.png
+data/raw/*.pdf
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# Modele i wagi
+*.h5
+*.pkl
+*.pth
+*.ckpt
+*.weights
+models/*.h5
+checkpoints/
+
+# Bazy danych
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System
+.DS_Store
+Thumbs.db
+
+# Credentials
+.env
+*.key
+credentials.json
+config/secrets.*
+
+# ML tracking
+wandb/
+mlruns/
+.wandb/
+
+# Logs
+*.log
+logs/
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+"@ | Out-File .gitignore -Encoding UTF8 -NoNewline
