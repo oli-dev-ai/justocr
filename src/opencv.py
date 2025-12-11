@@ -12,7 +12,8 @@ def convert_to_grayscale(image):
     """Konwertuje do grayscale."""
     if image is None:
         raise ValueError("Image cannot be None")
-    return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    return gray
 
 def display_image(image, title="Image", grayscale=False):
     """Wyświetla obraz."""
@@ -25,3 +26,10 @@ def display_image(image, title="Image", grayscale=False):
     plt.title(title)
     plt.axis('off')
     plt.show()
+
+def denoise(image):
+    """Removes noise from image"""
+    if image is None:
+        raise ValueError("Image cannot be none")
+    denoised = cv2.fastNlMeansDenoising(image, None, h=10, templateWindowSize=7, searchWindowSize=21)
+    return denoised
