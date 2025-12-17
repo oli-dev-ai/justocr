@@ -1,5 +1,0 @@
-CHECKLIST
-
-Python - 13.12.10 - jest
-venv - jest
-Tesseract OCR system soft - jest
