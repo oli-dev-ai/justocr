@@ -1,4 +1,4 @@
-from opencv import load_image, convert_to_grayscale, display_image, denoise, threshold, correct_rotation
+from opencv import load_image, convert_to_grayscale, denoise, threshold, correct_rotation
 import cv2
 from pathlib import Path
 
