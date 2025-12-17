@@ -16,6 +16,11 @@ ENV/
 .ipynb_checkpoints
 
 # Wrażliwe dane - obrazy i dokumenty
+data/processed/*.jpg
+data/processed/*.jpeg
+data/processed/*.png
+data/processed/*.pdf
+data/txt_reco/*.txt
 data/raw/*.jpg
 data/raw/*.jpeg
 data/raw/*.png
