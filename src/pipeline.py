@@ -28,4 +28,4 @@ def process_pipeline(image_path):
     cv2.imwrite(str(output_path), corrected_rot)
     print(f"Saved in{output_path}")
 
-    return corrected_rot
+    return corrected_rot, output_filename
